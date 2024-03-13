@@ -5,6 +5,12 @@ import requests
 import base64
 import os
 from PIL import Image, ImageTk
+import ctypes
+import time
+hWnd = ctypes.windll.user32.GetForegroundWindow()
+ctypes.windll.user32.ShowWindow(hWnd, 0)
+
+time.sleep(0.25)
 
 window = Tk()
 
